@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-mUkCBeyHPdg0tqB6JDd+65Gpw5h/l8DKcCTV2D2UpaMMFd7Jo8A+mDAosaWgFBPl"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <title>صفحه ادمین - تست</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0">
+      <div class="container">
+        <a class="navbar-brand fw-bold me-5 scale" href="#">KHSH . IR</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">داشبورد</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">پست ها</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">دسته بندی</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">کاربران</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">ورود</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="register.html">عضویت</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                ><i class="fas fa-user me-2"></i>خلیل شاخی</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fas fa-user-circle me-2"></i> پروفایل</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fas fa-cog me-2"></i> تنظیمات</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="login.html"
+                ><i class="fas fa-user-times me-2"></i>خروج</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section>
+      <div class="container py-3">
+        <div class="row align-items-center">
+          <div class="col-6">
+            <h3><i class="fas fa-cog me-2"></i>داشبورد</h3>
+          </div>
+          <div class="col-6 text-end">
+            <button type="button" class="btn btn-outline-primary">
+              دریافت گزارش<i class="fas fa-download ms-2"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="summary">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div
+              id="card1"
+              class="d-flex bg-white px-4 py-4 border shadow justify-content-between align-items-center"
+            >
+              <div class="d-flex flex-column">
+                <h5 class="fw-bold text-primary mb-3">
+                  <i class="fas fa-pencil-alt text-muted me-1"> </i> پست ها
+                </h5>
+                <h2 class="count fw-bold text-muted">500</h2>
+              </div>
+              <a
+                href="#!"
+                data-bs-toggle="modal"
+                data-bs-target="#addPostModal"
+              >
+                <i class="fas fa-plus-circle fa-3x text-primary scale"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div
+              id="card2"
+              class="d-flex bg-white px-4 py-4 border shadow justify-content-between align-items-center"
+            >
+              <div class="d-flex flex-column">
+                <h5 class="fw-bold text-success mb-3">
+                  <i class="fas fa-clipboard-list text-muted me-1"></i> دسته
+                  بندی
+                </h5>
+                <h2 class="count fw-bold text-muted">80</h2>
+              </div>
+              <a
+                href="#!"
+                data-bs-toggle="modal"
+                data-bs-target="#addCatgModal"
+              >
+                <i class="fas fa-plus-circle fa-3x text-success scale"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              id="card3"
+              class="d-flex bg-white px-4 py-4 border shadow justify-content-between align-items-center"
+            >
+              <div class="d-flex flex-column">
+                <h5 class="fw-bold text-info mb-3">
+                  <i class="fas fa-users text-muted me-1"></i> کاربران
+                </h5>
+                <h2 class="count fw-bold text-muted">15863</h2>
+              </div>
+              <a
+                href="#!"
+                data-bs-toggle="modal"
+                data-bs-target="#addUserModal"
+              >
+                <i class="fas fa-plus-circle fa-3x text-info scale"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="posts">
+      <div class="container py-3">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="card">
+              <div class="card-header h3">آمار و آخرین پست ها</div>
+              <div class="card-body px-0">
+                <canvas id="myChart" width="100%"></canvas>
+                <table class="table align-middle text-center mt-2">
+                  <thead class="table-dark">
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">عنوان</th>
+                      <th scope="col">دسته بندی</th>
+                      <th scope="col">تاریخ</th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>پست اول</td>
+                      <td>پی اچ پی</td>
+                      <td>22 خرداد</td>
+                      <td>
+                        <a href="" type="button" class="btn btn-outline-primary"
+                          >نمایش »</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>پست 2</td>
+                      <td>پی اچ پی</td>
+                      <td>22 تیر</td>
+                      <td>
+                        <a href="" type="button" class="btn btn-outline-primary"
+                          >نمایش »</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>پست 3</td>
+                      <td>پی اچ پی</td>
+                      <td>22 بهمن</td>
+                      <td>
+                        <a href="" type="button" class="btn btn-outline-primary"
+                          >نمایش »</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>پست 4</td>
+                      <td>پی اچ پی</td>
+                      <td>22 آذر</td>
+                      <td>
+                        <a href="" type="button" class="btn btn-outline-primary"
+                          >نمایش »</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td>پست 5</td>
+                      <td>پی اچ پی</td>
+                      <td>22 اردیبهشت</td>
+                      <td>
+                        <a href="" type="button" class="btn btn-outline-primary"
+                          >نمایش »</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">6</th>
+                      <td>پست 6</td>
+                      <td>پی اچ پی</td>
+                      <td>22 آذر</td>
+                      <td>
+                        <a href="" type="button" class="btn btn-outline-primary"
+                          >نمایش »</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">7</th>
+                      <td>پست 7</td>
+                      <td>پی اچ پی</td>
+                      <td>22 اردیبهشت</td>
+                      <td>
+                        <a href="" type="button" class="btn btn-outline-primary"
+                          >نمایش »</a
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="w-100 bg-white px-4 py-4 mb-3 border shadow">
+              <h4>فروش در ماه:</h4>
+              <h5 class="text-muted">1,200,000 ملیون</h5>
+            </div>
+            <div class="w-100 bg-white px-4 py-4 mb-3 border shadow">
+              <h4>آمار فروش:</h4>
+              <h5 class="text-muted">1,260 کالا</h5>
+            </div>
+            <div class="w-100 bg-white px-4 py-4 mb-3 border shadow">
+              <h4>پـیـام ها:</h4>
+              <h5 class="text-muted">256 پیام</h5>
+            </div>
+            <div class="w-100 bg-white px-4 py-4 border shadow">
+              <h4>وظایف:</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 45%">
+                  45%
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-dark text-center text-white p-4">
+      <p class="mb-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت</p>
+    </section>
+    <!-- Add Post Modal -->
+    <div
+      class="modal fade px-0"
+      id="addPostModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-primary">
+            <h5 class="modal-title text-white">ایجاد پست جدید</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="flname" class="form-label"
+                  >نام ونام خانوادگی:</label
+                >
+                <input type="text" class="form-control" id="flname" />
+              </div>
+              <div class="mb-3">
+                <label for="catg" class="form-label">انتخاب دسته:</label>
+                <select id="catg" class="form-select">
+                  <option selected>....</option>
+                  <option>لاراول</option>
+                  <option>پی اچ پی</option>
+                  <option>جاوا اسکریپت</option>
+                  <option>نود جی اس</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="formFile" class="form-label">انتخاب تصویر:</label>
+                <input class="form-control" type="file" id="formFile" />
+                <small class="text-muted">حداکثر حجم : 3 مگابایت</small>
+              </div>
+              <div class="mb-3">
+                <label for="editor" class="form-label">توضیحات:</label>
+                <textarea class="form-control" id="editor" rows="3"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer justify-content-start">
+            <button type="button" class="btn btn-primary">ثبت پست</button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              انصراف
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add Catg Modal -->
+    <div
+      class="modal fade px-0"
+      id="addCatgModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-success">
+            <h5 class="modal-title text-white">ایجاد دسته بندی جدید</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="catName" class="form-label">نام دسته:</label>
+                <input type="text" class="form-control" id="catName" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer justify-content-start">
+            <button type="button" class="btn btn-success">ثبت دسته</button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              انصراف
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add User Modal -->
+    <div
+      class="modal fade px-0"
+      id="addUserModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-info">
+            <h5 class="modal-title text-white">ایجاد کاربر جدید</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="u-name" class="form-label"
+                  >نام ونام خانوادگی:</label
+                >
+                <input type="text" class="form-control" id="u-name" />
+              </div>
+
+              <div class="mb-3">
+                <label for="u-email" class="form-label">پست الکترونیکی:</label>
+                <input type="email" class="form-control" id="u-email" />
+              </div>
+
+              <div class="mb-3">
+                <label for="u-pass" class="form-label">پسـورد:</label>
+                <input type="password" class="form-control" id="u-pass" />
+              </div>
+
+              <div class="mb-3">
+                <label for="u2-pass" class="form-label">تکرار پـسورد:</label>
+                <input type="password" class="form-control" id="u2-pass" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer justify-content-start">
+            <button type="button" class="btn btn-info text-white">
+              ثبت کاربر
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              انصراف
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.ckeditor.com/4.15.1/standard/ckeditor.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
+      integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

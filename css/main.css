@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "Yekan";
+  src: url("../fonts/Yekan.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Yekan.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Yekan.woff2") format("woff2"),
+    url("../fonts/Yekan.woff") format("woff"),
+    url("../fonts/Yekan.ttf") format("truetype");
+  /* Safari, Android, iOS */
+}
+
+body {
+  font-family: "Yekan";
+}
+
+.navbar-brand {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#summary #card1 {
+  border-right: 5px solid #007bff !important;
+}
+
+#summary #card2 {
+  border-right: 5px solid #198754 !important;
+}
+
+#summary #card3 {
+  border-right: 5px solid #0dcaf0 !important;
+}
+
+.scale:hover {
+  transform: scale(1.05);
+}
+
+#posts .border {
+  border-bottom: 5px solid #dc3545 !important;
+}
+
+.login-img {
+  background: url(../img/bg-login.jpg) no-repeat center center/cover;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.register-img {
+  background: url(../img/bg-register.jpg) no-repeat center center/cover;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.btn-google {
+  background: #ea4335;
+  color: #fff;
+}
+
+.btn-google:hover {
+  background: #e12717;
+  color: #fff;
+}
+
+.btn-facebook {
+  background: #3b5998;
+  color: #fff;
+}
+
+.btn-facebook:hover {
+  background: #30497c;
+  color: #fff;
+}
+
+.btn-link:hover {
+  text-decoration: underline !important;
+}
